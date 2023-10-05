@@ -1,0 +1,16 @@
+#importing pandas and numpy package
+import pandas as pd
+import numpy as np
+
+#Reading csvn file 
+df = pd.read_csv('/content/Exp-1 - Sheet1.csv')
+print(df)
+
+#Printind attributes of the dataset
+d = np.array(df)[:,:-1]
+print("n The attributes are: ",d)
+
+#Printing the target value of the dataset
+target = np.array(df)[:,-1]
+print("n The target is: ",target)
+
