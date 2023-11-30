@@ -27,3 +27,19 @@ print('Confusion Matrix')
 print(confusion_matrix(y_test,y_pred))
 print('Accuracy Matrix')
 print(classification_report(y_test,y_pred))
+
+#OUTPUT OF THE PROGRAM
+Confusion Matrix
+[[12  0  0]
+ [ 0 13  1]
+ [ 0  0 19]]
+Accuracy Matrix
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        12
+           1       1.00      0.93      0.96        14
+           2       0.95      1.00      0.97        19
+
+    accuracy                           0.98        45
+   macro avg       0.98      0.98      0.98        45
+weighted avg       0.98      0.98      0.98        45
