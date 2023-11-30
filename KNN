@@ -6,3 +6,6 @@ from sklearn import datasets
 
 #loading dataset
 iris = datasets.load_iris()
+
+#printing iris dataset
+iris
