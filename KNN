@@ -4,3 +4,5 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn import datasets
 
+#loading dataset
+iris = datasets.load_iris()
