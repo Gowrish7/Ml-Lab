@@ -16,3 +16,8 @@ y=iris.target
 
 print('Sepal Length','Sepal Width','Petal Length','Petal Width')
 print('Class:0-iris-setosa,1-iris-versicolor,2-iris-virginica')
+
+#splitting logic and splitting the dataset to 30%
+x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.3)
+classifier = KNeighborsClassifier(n_neighbors=5)
+classifier.fit(x_train,y_train) 
