@@ -9,3 +9,7 @@ iris = datasets.load_iris()
 
 #printing iris dataset
 iris
+
+#Taking two variables
+x=iris.data
+y=iris.target
