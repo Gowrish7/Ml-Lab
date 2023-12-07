@@ -21,3 +21,5 @@ def draw(tau):
 X=np.linspace(-3,3,num=1000)
 domain = X
 Y=np.log(np.abs(X ** 2 -1)+0.5)
+
+draw(10)
