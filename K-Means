@@ -15,3 +15,7 @@ Y.columns = ['Targets']
 #Building Cluster
 model = KMeans(n_clusters=3)
 model.fit(X)
+
+#Coloring
+plt.figure(figsize=(14,7))
+colormap = np.array(['Red','Lime','Black'])
