@@ -27,3 +27,17 @@ plt.scatter(X.Petal_length,X.Petal_width,c=colormap[Y.Targets],s=40)
 plt.title('Real Clusters')
 plt.xlabel('Petal Length')
 plt.ylabel('Petal Width')
+
+from sklearn import preprocessing 
+scaler = preprocessing.StandardScaler()
+scaler.fit(X)
+xsa = scaler.transform(X)
+xs = pd.DataFrame(xsa,columns=X.columns)
+from sklearn.mixture import GaussianMixture
+gmm = GaussianMixture(n_components=40)
+gmm.fit(xs)
+plt.subplot(1,3,3)
+plt.scatter(X.Petal_length,X.Petal_width,c=colormap[0],s=40)
+plt.title('gmm clustering')
+plt.xlabel('Petal Length')
+plt.ylabel('Petal Width')
