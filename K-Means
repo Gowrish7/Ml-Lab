@@ -11,3 +11,7 @@ X = pd.DataFrame(iris.data)
 X.columns = ['Sepals_length','Sepal_width','Petal_length','Petal_width']
 Y = pd.DataFrame(iris.target)
 Y.columns = ['Targets']
+
+#Building Cluster
+model = KMeans(n_clusters=3)
+model.fit(X)
