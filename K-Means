@@ -41,3 +41,10 @@ plt.scatter(X.Petal_length,X.Petal_width,c=colormap[0],s=40)
 plt.title('gmm clustering')
 plt.xlabel('Petal Length')
 plt.ylabel('Petal Width')
+
+#KMeans Clustering
+plt.subplot(1,3,2)
+plt.scatter(X.Petal_length,X.Petal_width,c=colormap[model.labels_],s=40)
+plt.title('K-Means clustering')
+plt.xlabel('Petal Length')
+plt.ylabel('Petal Width')
