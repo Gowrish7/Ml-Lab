@@ -4,3 +4,10 @@ from sklearn import datasets
 from sklearn.cluster import KMeans
 import pandas as pd
 import numpy as np
+
+#Loading Datasets
+iris = datasets.load_iris()
+X = pd.DataFrame(iris.data)
+X.columns = ['Sepals_length','Sepal_width','Petal_length','Petal_width']
+Y = pd.DataFrame(iris.target)
+Y.columns = ['Targets']
