@@ -17,3 +17,7 @@ def draw(tau):
     plt.plot(X,Y,'o',color='black')
     plt.plot(domain,prediction,color='red')
     plt.show()
+
+X=np.linspace(-3,3,num=1000)
+domain = X
+Y=np.log(np.abs(X ** 2 -1)+0.5)
