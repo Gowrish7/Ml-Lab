@@ -3,3 +3,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn import datasets
 from sklearn.cluster import KMeans
+
+def local_regression(x0,X,Y,tau):
+    x0 = [1,x0]
+    X= [[1,i] for i in X]
+    X=np.array(X)
+    xw = (X.T)*np.exp(np.sum((X-x0)**2,axis=1)/(-2*tau))
+    beta = np.linalg.pinv(xw@X)@xw@Y@x0
+    return beta
