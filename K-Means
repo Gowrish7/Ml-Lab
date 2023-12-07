@@ -1,0 +1,6 @@
+#improting packages
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.cluster import KMeans
+import pandas as pd
+import numpy as np
