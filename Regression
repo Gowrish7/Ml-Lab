@@ -11,3 +11,9 @@ def local_regression(x0,X,Y,tau):
     xw = (X.T)*np.exp(np.sum((X-x0)**2,axis=1)/(-2*tau))
     beta = np.linalg.pinv(xw@X)@xw@Y@x0
     return beta
+
+def draw(tau):
+    prediction = [local_regression(x0,X,Y,tau) for x0 in domain]
+    plt.plot(X,Y,'o',color='black')
+    plt.plot(domain,prediction,color='red')
+    plt.show()
