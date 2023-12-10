@@ -16,9 +16,6 @@ D13,Overcast,Normal,Normal,Weak,Yes
 D14,Rain,High,High,Strong,No
 
 
-
-
-
 import pandas as pd;
 from pandas import DataFrame
 df_tennis = pd.read_csv('tennis.csv')
